@@ -1,0 +1,12 @@
+function FuncPrint (a, b) {
+  let current = a;
+  let printnumbers = setInterval(function() {
+    console.log(current);
+    if (current == b) {
+      clearInterval(printnumbers);
+    }
+    current++;
+  }, 1000);
+}
+
+FuncPrint (1, 5);

@@ -1,0 +1,26 @@
+let arr = [1,2,3,4,5,6,7,8,9, 'fff', null, undefined];
+let evenArr = [];
+let oddArr = [];
+let otherArr = [];
+
+function getEvenOddnumbers(){
+  for (i=0; i<arr.length; i++){
+    if (typeof(arr[i]) === 'number')
+{
+    if (arr[i]%2 == 0){
+      evenArr.push(arr[i]);
+    }
+    else
+      {
+        oddArr.push(arr[i]);
+      }
+  }
+    else{
+      otherArr.push(arr[i]);
+    }
+}  
+  console.log(evenArr.length, oddArr.length);
+  console.log(otherArr.length);
+}
+
+getEvenOddnumbers();

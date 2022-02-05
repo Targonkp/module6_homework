@@ -1,0 +1,12 @@
+let point = true;
+function SimpleNumber(a){
+  for (i=2; i<a; i++){
+    if (a%i==0){
+      point = false;
+      break;
+    }
+  }
+  console.log('Число является простым: ' + point);
+}
+
+SimpleNumber(15);

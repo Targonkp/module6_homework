@@ -1,0 +1,6 @@
+const Multiplication = (x,n) => {
+  let pow = Math.pow(x, n);
+  console.log(pow);
+}
+
+Multiplication(2,5);
